@@ -8,7 +8,7 @@ const config = {
   roots: ['<rootDir>'],
   modulePaths: ['<rootDir>'],
   moduleNameMapper: {
-    '\\.(css|less|scss|sass)$': 'identity-obj-proxy',
+    '\\.(css|less|scss|sass|png)$': 'identity-obj-proxy',
     '^src/(.*)$': '<rootDir>/src$1',
     '^components(.*)$': '<rootDir>/src/components$1',
   },

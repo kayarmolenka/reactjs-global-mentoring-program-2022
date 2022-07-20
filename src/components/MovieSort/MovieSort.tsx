@@ -25,6 +25,7 @@ export const MovieSort = (props: IMovieSortProps) => {
             className={styles.movieSortSelect}
             value={mapNameSorts(searchParams.get('sortBy') || chosenTypeSorting)}
             onChange={onHandleSortType}
+            data-testid="select"
           >
             {valueSortMovie.map((typeSort) => (
               <option key={typeSort} value={typeSort}>

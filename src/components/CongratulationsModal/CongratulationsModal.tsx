@@ -29,6 +29,7 @@ export const CongratulationsModal = (props: IModalProps) => {
             icon={faXmark}
             className={styles.modalCloseIcon}
             onClick={closeModalWindow}
+            data-testid="closeIcon"
           />
         </div>
         <div className={styles.modalContent}>

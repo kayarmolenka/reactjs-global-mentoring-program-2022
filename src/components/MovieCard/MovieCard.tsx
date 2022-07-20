@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEllipsisVertical } from '@fortawesome/free-solid-svg-icons';
 import { PopupMovieCard, DeleteMovie, Modal, CongratulationsModal } from '../index';
 import { MovieCardProps } from '../../models';
-import { DEFAULT_SRC } from '../../constants';
+import DEFAULT_SRC from '../../assets/images/default_poster.png';
 import { deleteMovie, fetchMovieList, useAppDispatch } from '../../store';
 
 import styles from './MovieCard.module.scss';
@@ -78,6 +78,7 @@ export const MovieCard = (props: MovieCardProps) => {
             icon={faEllipsisVertical}
             className={styles.movieCardThreeDots}
             data-name={id}
+            data-testid="threeDotsIcon"
           />
         </div>
         {isShowEditModal && activePopupId === id && (

@@ -47,6 +47,7 @@ export const PopupMovieCard = (props: IPopupMovieCardProps) => {
           icon={faXmark}
           className={styles.modalCloseIcon}
           onClick={closeModalWindow}
+          data-testid="closeIcon"
         />
       </div>
       <div className={styles.modalBtnWrapper}>

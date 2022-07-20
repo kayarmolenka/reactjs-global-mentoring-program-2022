@@ -36,6 +36,7 @@ export const DeleteMovie = (props: IDeleteMovieProps) => {
             icon={faXmark}
             className={styles.modalCloseIcon}
             onClick={closeModalWindow}
+            data-testid="closeIcon"
           />
         </div>
         <div className={styles.modalContent}>

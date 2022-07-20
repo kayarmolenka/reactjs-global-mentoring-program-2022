@@ -46,6 +46,7 @@ export const SearchForm = () => {
               icon={faXmark}
               className={styles.searchFormIcon}
               onClick={removeSearchText}
+              data-testid="cancelText"
             />
           )}
         </div>

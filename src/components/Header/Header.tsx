@@ -3,7 +3,8 @@ import { Route, Routes, useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { HeaderComponent } from './components';
 import { DescriptionMovie } from '../DescriptionMovie';
-import { DEFAULT_SRC } from '../../constants';
+import DEFAULT_SRC from '../../assets/images/default_poster.png';
+
 import { fetchMovieById, getActiveDescriptionMovieSelector, useAppDispatch } from '../../store';
 import { NotFound } from '../NotFound';
 import { convertIdFromStringToNumber } from '../../utils';
